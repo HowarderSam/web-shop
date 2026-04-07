@@ -1,0 +1,22 @@
+{% extends  'base.html' %}
+
+{%block content%}
+<h1 class='display-3'>{% block title %}Register{% endblock %}</h1>
+
+
+<form method="post">
+      <div class="mb-3">
+    <label class="form-label">Username</label>
+    <input type="text" class="form-control" name="username" required>  
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Password</label>
+    <input type="password" class="form-control" name="password" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<p class="text-secondary">Click here if you already have an account: <a href="/login/">Login</a></p>
+<p class="text-secondary">Home page: <a href="/">Home</a></p>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Thank You!{% endblock %}
+
+{% block content %}
+<div class="container my-5 text-center">
+    <h1 class="mb-4">Thank You for Your Purchase!</h1>
+    <p class="lead mb-4">We really appreciate your order.</p>
+
+    <div class="card mx-auto" style="max-width: 400px;">
+        <img src="{{ i.image }}" class="img-fluid" style="max-height: 250px; width: 100%; object-fit: contain;">
+        <div class="card-body">
+            <h5 class="card-title">{{ i.name }}</h5>
+            <p class="card-text">Price: ${{ i.price }}</p>
+            <p class="card-text">Category: {{ i.category }}</p>
+            <p class="card-text">Storage: {{ i.storage }}</p>
+            {% if i.color %}
+            <p class="card-text">Color: {{ i.color }}</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <a href="{{ url_for('welcome') }}" class="btn btn-success mt-4">Back to Shop</a>
+</div>
+{% endblock %}

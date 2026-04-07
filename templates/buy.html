@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Buy{% endblock %}
+
+{% block content %}
+<h1>Do you want to buy?</h1>
+
+
+
+
+<div class="m-3">
+    <div class="card">
+        <img src="{{ i.image }}" class="img-fluid" style="max-height: 250px; width: 100%; object-fit: contain;">
+      <div class="card-body">
+        <h5 class="card-title">{{i.name}}</h5>
+        <p class="card-text">{{i.description}}</p>
+        <p class ="card-text">Price: {{i.price}}</p>
+        <p class ="card-text">Category: {{i.category}}</p>
+        <p class ="card-text">Storage: {{i.storage}}</p>
+        <p class ="card-text">Color: {{i.color}}</p>
+      </div>
+      </div>
+</div>
+
+<div>
+
+<form method="post">
+    <button type="submit" class="btn btn-primary">Confirm Order</button>
+</form>
+
+{% endblock %}

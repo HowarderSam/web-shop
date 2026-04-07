@@ -1,5 +1,9 @@
 
 
+
+https://github.com/user-attachments/assets/75953754-ea4a-4589-bd95-1ba4a8a6e5fd
+
+
 # web-shop
 - Web-shop mini-project.
   
@@ -12,6 +16,7 @@
 
 
 
-Preview:
-https://github.com/user-attachments/assets/ee3fb329-d3da-43dd-9f20-036fac72f865
+
+
+https://github.com/user-attachments/assets/5ed68859-0b85-4132-816f-773aaeec3b8e
 
